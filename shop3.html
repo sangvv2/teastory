@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /*nav*/
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(img/paper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px 30px;
+      font-size: 2vw;
+    }
+
+    .logo img {
+      height: 70px; 
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: none;
+    }
+        
+    @media (max-width: 800px) {
+    .topnav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 25px 20px;
+      margin-top: 0;
+    }
+
+    .nav-links {
+      gap: 10px;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      font-size: 1.8em;
+    }
+    .main-img{
+      text-align: center;
+    }
+    .button-img{
+      text-align: center;
+    }
+    }
+    /*nav*/
+
+    .shop-intro {
+      text-align: center;
+      margin: 60px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .shop-intro h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .shop-intro p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+
+    /*3x3*/
+    .shop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .product {
+      width: 300px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .category {
+      font-size: 14px;
+      color: gray;
+      margin: 8px 0 4px;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-size: 16px;
+      margin-top: 6px;
+    }
+
+    .price .sale {
+      color: red;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    /*footer*/
+    .footer {
+      background-color: #a9744f;
+      padding: 30px 20px;
+      color: #000; 
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-info p {
+      margin-bottom: 6px;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 13px;
+        padding: 25px 15px;
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="로고">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="health1.html">차 효능</a>
+      <a href="season2.html">사계절 추천차</a>
+      <a href="shop3.html">상점</a>
+      <a href="culture4.html">다도</a>
+      <a href="cafe5.html">찻집 소개</a>
+    </div>
+  </div>
+
+  <section class="shop-intro">
+    <h2>다화 상점</h2>
+    <p>
+      다화는 차를 우리는 도구 이상의 가치를 담습니다.<br>
+      일상에 스며드는 아름다움 속에 담긴 이야기를 여러분과 함께 나누고자 합니다.
+    </p>
+  </section>
+
+  <section class="shop">
+    <div class="product">
+      <img src="img/cup1.png" alt="상품 이미지">
+      <p class="category">의흘자사호</p>
+      <p class="name">석표</p>
+      <p class="price">150,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/cup2.png" alt="상품 이미지">
+      <p class="category">한결</p>
+      <p class="name">옻칠 잔받침</p>
+      <p class="price">33,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/cup3.png" alt="상품 이미지">
+      <p class="category">송운학가</p>
+      <p class="name">자사고</p>
+      <p class="price">500,000원</p>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="product">
+      <img src="img/tea1.png" alt="상품 이미지">
+      <p class="category">차</p>
+      <p class="name">기문홍차</p>
+      <p class="price">24,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/tea2.png" alt="상품 이미지">
+      <p class="category">홍차</p>
+      <p class="name">하동 휴심선차 자비</p>
+      <p class="price">75,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/tea3.png" alt="상품 이미지">
+      <p class="category">한국차</p>
+      <p class="name">보성녹차</p>
+      <p class="price">24,000원</p>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="product">
+      <img src="img/tea4.png" alt="상품 이미지">
+      <p class="category">티백</p>
+      <p class="name">구기자 블렌딩 티백</p>
+      <p class="price">70,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/cup4.png" alt="상품 이미지">
+      <p class="category">림봉희</p>
+      <p class="name">잔</p>
+      <p class="price">160,000원</p>
+    </div>
+    <div class="product">
+      <img src="img/cup5.png" alt="상품 이미지">
+      <p class="category">유수연</p>
+      <p class="name">청자잔</p>
+      <p class="price">120,000원</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>(주)다화</strong></p>
+      <p>사업자 등록번호 : 123-45-67891 | 대표 : 상미</p>
+      <p>호스팅 서비스 : 주식회사 다화상점 | 통신판매업 신고번호 : 2014-서울강남-03377</p>
+      <p>06236 서울특별시 강남구 테헤란로 142-14569, (역삼동,다화빌딩)</p>
+      <p>고객센터 : 서울특별시 강남구 테헤란로 123456, 10층 (역삼동, 다화센터)</p>
+    </div>
+  </footer>
+</body>
+</html>

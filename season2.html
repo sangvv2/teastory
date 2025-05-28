@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>season</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /*nav*/
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(img/paper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px 30px;
+      font-size: 2vw;
+    }
+
+    .logo img {
+      height: 70px; 
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: none;
+    }
+    
+    @media (max-width: 800px) {
+    .topnav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 25px 20px;
+      margin-top: 0;
+    }
+
+    .nav-links {
+      gap: 10px;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      font-size: 1.8em;
+    }
+    .main-img{
+      text-align: center;
+    }
+    .button-img{
+      text-align: center;
+    }
+    }
+    /*nav*/
+
+    .season-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 50px auto;
+      gap: 30px;
+    }
+
+    .item {
+      position: relative;
+      width: 400px;
+      height: 700px;
+      overflow: hidden;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .season-title,
+    .text-line1,
+    .text-line2,
+    .text-line3 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .season-title{
+      top: 20%;
+      font-size: 30px;
+    }
+
+    /* 첫 줄 텍스트 위치 */
+    .text-line1 {
+      top: 30%;
+    }
+
+    /* 둘째 줄 텍스트 위치 */
+    .text-line2 {
+      top: 40%;
+    }
+    .text-line3{
+      top: 50%;
+    }
+
+    /*footer*/
+    .footer {
+      background-color: #a9744f;
+      padding: 30px 20px;
+      color: #000; 
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-info p {
+      margin-bottom: 6px;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 13px;
+        padding: 25px 15px;
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="로고">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="health1.html">차 효능</a>
+      <a href="season2.html">사계절 추천차</a>
+      <a href="shop3.html">상점</a>
+      <a href="culture4.html">다도</a>
+      <a href="cafe5.html">찻집 소개</a>
+    </div>
+  </div>
+
+  <section class="season-grid">
+    <div class="item">
+      <img src="img/spring.png" alt="봄 추천차">
+      <div class="season-title">봄 추천차</div>
+      <div class="text-line1">숙차</div>
+      <div class="text-line2">매화차</div>
+      <div class="text-line3">국화차</div>
+    </div>
+    <div class="item">
+      <img src="img/summer.png" alt="여름 추천차">
+      <div class="season-title">여름 추천차</div>
+      <div class="text-line1">보리차</div>
+      <div class="text-line2">구기자차</div>
+      <div class="text-line3">매실차</div>
+    </div>
+    <div class="item">
+      <img src="img/fall.png" alt="가을 추천차">
+      <div class="season-title">가을 추천차</div>
+      <div class="text-line1">유자차</div>
+      <div class="text-line2">생강차</div>
+      <div class="text-line3">대추차</div>
+    </div>
+    <div class="item">
+      <img src="img/winter.png" alt="겨울 추천차">
+      <div class="season-title">겨울 추천자</div>
+      <div class="text-line1">보리차</div>
+      <div class="text-line2">마차</div>
+      <div class="text-line3">계피차</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>(주)다화</strong></p>
+      <p>사업자 등록번호 : 123-45-67891 | 대표 : 상미</p>
+      <p>호스팅 서비스 : 주식회사 다화상점 | 통신판매업 신고번호 : 2014-서울강남-03377</p>
+      <p>06236 서울특별시 강남구 테헤란로 142-14569, (역삼동,다화빌딩)</p>
+      <p>고객센터 : 서울특별시 강남구 테헤란로 123456, 10층 (역삼동, 다화센터)</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(img/paper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px 30px;
+      font-size: 2vw;
+    }
+
+    .logo img {
+      height: 70px; /* 로고 높이 조정 가능 */
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: none;
+    }
+    
+    @media (max-width: 800px) {
+    .topnav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 25px 20px;
+      margin-top: 0;
+    }
+
+    .nav-links {
+      gap: 10px;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      font-size: 1.8em;
+    }
+    .main-img{
+      text-align: center;
+    }
+    .button-img{
+      text-align: center;
+    }
+    }
+  
+
+
+    .main-img{
+      text-align: center;
+      width: 100%;
+    }
+    .main-img img{
+      display: inline-block;
+      max-width: 100%;
+    }
+    .button-img{
+      text-align: center;
+    }
+    .button-img img{
+      width: 19%;
+    }
+
+    /*footer*/
+    .footer {
+      background-color: #a9744f; /* 갈색 느낌 */
+      padding: 30px 20px;
+      color: #000; /* 검은 글씨 */
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-info p {
+      margin-bottom: 6px;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 13px;
+        padding: 25px 15px;
+        text-align: left;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="로고">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="health1.html">차 효능</a>
+      <a href="season2.html">사계절 추천차</a>
+      <a href="shop3.html">상점</a>
+      <a href="culture4.html">다도</a>
+      <a href="cafe5.html">찻집 소개</a>
+    </div>
+  </div>
+  <div class="main-img"><img src="img/mainimg.png" ></div>
+
+  <div class="button-img">
+    <a href="health1.html"><img src="img/button1.png"></a>
+    <a href="season2.html"><img src="img/button2.png"></a>
+    <a href="shop3.html"><img src="img/button3.png"></a>
+    <a href="culture4.html"><img src="img/button4.png"></a>
+    <a href="cafe5.html"><img src="img/button5.png"></a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>(주)다화</strong></p>
+      <p>사업자 등록번호 : 123-45-67891 | 대표 : 상미</p>
+      <p>호스팅 서비스 : 주식회사 다화상점 | 통신판매업 신고번호 : 2014-서울강남-03377</p>
+      <p>06236 서울특별시 강남구 테헤란로 142-14569, (역삼동,다화빌딩)</p>
+      <p>고객센터 : 서울특별시 강남구 테헤란로 123456, 10층 (역삼동, 다화센터)</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

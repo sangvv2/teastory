@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다화 - 다도</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(img/paper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px 30px;
+      font-size: 2vw;
+    }
+
+    .logo img {
+      height: 70px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: none;
+    }
+
+
+    @media (max-width: 800px) {
+    .topnav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 25px 20px;
+      margin-top: 0;
+    }
+
+    .nav-links {
+      gap: 10px;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      font-size: 1.8em;
+    }
+    .main-img{
+      text-align: center;
+    }
+    .button-img{
+      text-align: center;
+    }
+    .label h3
+    .label p {
+      font-size: 2vw;
+      margin: 1px 0;
+    }
+    }
+    @media (max-width: 430px){
+      .label p{
+        font-size: 8px !important;
+      }
+    }
+
+    .center-title {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 3vw;
+    }
+
+
+    .tea-section {
+      max-width: 900px;
+      margin: 60px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .tea-box {
+      position: relative;
+    }
+
+    .tea-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .label {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #0c0000;
+      font-size: clamp(14px, 2vw, 20px);
+      text-align: center;
+      width: 85%;
+      line-height: 1.7;
+    }
+
+    .label h3,
+    .label p {
+      font-size: clamp(14px, 2vw, 18px);
+      margin: 1px 0;
+    }
+
+
+    /*footer*/
+    .footer {
+      background-color: #a9744f;
+      padding: 30px 20px;
+      color: #000; 
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-info p {
+      margin-bottom: 6px;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 13px;
+        padding: 25px 15px;
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="로고">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="health1.html">차 효능</a>
+      <a href="season2.html">사계절 추천차</a>
+      <a href="shop3.html">상점</a>
+      <a href="culture4.html">다도</a>
+      <a href="cafe5.html">찻집 소개</a>
+    </div>
+  </div>
+
+  <h1 class="center-title">다도</h1>
+
+
+  <section class="tea-section">
+    <div class="tea-box">
+      <img src="img/culture-img.png" alt="차문화 이미지">
+      <div class="label">
+        <h3>차문화</h3>
+        <p>
+          차는 단순한 음료가 아니라 사람과 사람 사이의 마음을 이어주는 문화입니다.<br>
+          한국의 다도는 정성과 배려를 담아 차를 내리고, 그 안에서 예와 조화를 실천합니다.<br>
+          일상의 한가운데서 쉼과 사색을 경험하게 해주는 깊이 있는 전통 문화입니다.<br>
+          차를 나누는 자리에는 말보다 마음이 앞서고, <br>
+          그 안에 담긴 여백과 침묵은 오히려 깊은 교감의 표현이 됩니다.<br>
+          우리는 차를 통해 단순한 마시는 행위를 넘어, 인간관계와 정신적 안정을 배우게 됩니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="tea-box">
+      <img src="img/culture-img.png" alt="차의 순서 이미지">
+      <div class="label">
+        <h3>차의 순서</h3>
+        <p>
+          1. 반상차림 – 자리를 정리하고 다구를 차림<br>
+          2. 물 준비 – 찻물 준비와 끓이기<br>
+          3. 다기 세척 – 찻잔과 다관을 정갈히 데움<br>
+          4. 찻잎 담기 – 정량의 찻잎을 다관에 담음<br>
+          5. 우려내기 – 온도에 맞춰 찻잎을 우림<br>
+          6. 음미하기 – 향과 온기를 느끼며 차를 마심<br>
+          7. 마무리 – 정리하고 감사의 마음을 표현함
+        </p>
+      </div>
+    </div>
+
+    <div class="tea-box">
+      <img src="img/culture-img.png" alt="차예절 이미지">
+      <div class="label">
+        <h3>차예절</h3>
+        <p>
+          예를 갖춘 자세 – 정중하고 반듯하게<br>
+          조용한 분위기 – 차에 집중하며 침묵 유지<br>
+          찻잔 받기 – 두 손으로 공손하게 받기<br>
+          천천히 음미 – 감사한 마음으로 차를 마심
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>(주)다화</strong></p>
+      <p>사업자 등록번호 : 123-45-67891 | 대표 : 상미</p>
+      <p>호스팅 서비스 : 주식회사 다화상점 | 통신판매업 신고번호 : 2014-서울강남-03377</p>
+      <p>06236 서울특별시 강남구 테헤란로 142-14569, (역삼동,다화빌딩)</p>
+      <p>고객센터 : 서울특별시 강남구 테헤란로 123456, 10층 (역삼동, 다화센터)</p>
+    </div>
+  </footer>
+</body>
+</html>

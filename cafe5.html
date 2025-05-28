@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>찻집 소개</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* nav */
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(img/paper.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px 30px;
+      font-size: 2vw;
+    }
+
+    .logo img {
+      height: 70px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+
+    /* 카드 레이아웃 */
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background-color: #ccc;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      width: 90%;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .text-overlay .headline {
+      font-size: clamp(16px, 2.5vw, 20px);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .text-overlay .info {
+      font-size: clamp(12px, 2vw, 16px);
+      line-height: 1.6;
+    }
+
+        
+    @media (max-width: 800px) {
+    .topnav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 25px 20px;
+      margin-top: 0;
+    }
+
+    .nav-links {
+      gap: 10px;
+      margin: 10px 0 0 0;
+    }
+
+    .nav-links a {
+      font-size: clamp(14px, 2.5vw, 18px);
+    }
+    .main-img{
+      text-align: center;
+    }
+    .button-img{
+      text-align: center;
+    }
+    }
+
+    @media (max-width: 430px) {
+    .text-overlay .headline{
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .text-overlay .headline {
+      font-size: 14px;
+    }
+
+    .text-overlay .info {
+      font-size: 10px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+    }
+  }
+
+
+    /*footer*/
+    .footer {
+      background-color: #a9744f;
+      padding: 30px 20px;
+      color: #000; 
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-info p {
+      margin-bottom: 6px;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 13px;
+        padding: 25px 15px;
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 상단 네비게이션 -->
+  <div class="topnav">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+    </div>
+    <div class="nav-links">
+      <a href="health1.html">차 효능</a>
+      <a href="season2.html">사계절 추천차</a>
+      <a href="shop3.html">상점</a>
+      <a href="culture4.html">다도</a>
+      <a href="cafe5.html">찻집 소개</a>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="card">
+      <img src="img/cafe1.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">한옥 찻집</div>
+        <div class="info">
+          위치 : 서울 종로구 인사동14길 12<br>
+          전화번호 : 0507-1330-0538<br>
+          운영시간 : 12:00 ~ 21:50<br>
+          ※ 21:00에 라스트오더
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="img/cafe2.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">한옥카페 숙임당</div>
+        <div class="info">
+          위치 : 서울 성북구 보문로 13가길 34-1<br>
+          전화번호 :0502-1946-6042<br>
+          운영시간 : 11:00 ~ 20:00<br>
+          ※ 19:00에 라스트오더
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cafe3.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">차차티클럽 창신한옥</div>
+        <div class="info">
+          위치 : 서울 종로구 종로46가길 13<br>
+          전화번호 : 070-4239-0713<br>
+          운영시간 : 13:00 ~ 22:00 (매일)<br>
+          ※ 21:30에 라스트오더
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cafe4.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">새소리물소리</div>
+        <div class="info">
+          위치 : 경기 성남시 수정구 오야남로38번길 10<br>
+          전화번호 : 0507-1340-7541<br>
+          운영시간 : 11:00 ~ 22:00 (매일)<br>
+          ※ 21:10에 라스트오더
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cafe5.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">익선동 뜰안</div>
+        <div class="info">
+          위치 : 서울 종로구 수표로28길 17-35<br>
+          전화번호 : 02-745-74203<br>
+          운영시간 : 12:00 ~ 22:00 (매일)<br>
+          ※ 21:00에 라스트오더
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cafe6.png" alt="찻집 이미지">
+      <div class="text-overlay">
+        <div class="headline">뜰과다원</div>
+        <div class="info">
+          위치 : 서울 종로구 인사동길 34<br>
+          전화번호 : 0507-1314-5310<br>
+          운영시간 : 10:00 ~ 22:00 (매일)<br>
+          ※ 21:50에 라스트오더
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>(주)다화</strong></p>
+      <p>사업자 등록번호 : 123-45-67891 | 대표 : 다솜</p>
+      <p>호스팅 서비스 : 주식회사 다화상점 | 통신판매업 신고번호 : 2014-서울강남-03377</p>
+      <p>06236 서울특별시 강남구 테헤란로 142-14569, (역삼동,다화빌딩)</p>
+      <p>고객센터 : 서울특별시 강남구 테헤란로 123456, 10층 (역삼동, 다화센터)</p>
+    </div>
+  </footer>
+</body>
+</html>
